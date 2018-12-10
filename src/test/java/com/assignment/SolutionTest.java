@@ -8,6 +8,8 @@ public class SolutionTest
 {
     
 	private Bird bird = new Bird();
+	private Duck duck = new Duck();
+	private Chicken chicken = new Chicken();
 	
 	@Test
 	public void testFly() throws Exception {
@@ -24,4 +26,15 @@ public class SolutionTest
 	        assertEquals( "I am singing", bird.sing());
 	}
 	
+	@Test
+	public void testDuck() throws Exception {
+	        assertEquals( "Quack, quack", duck.says());
+	        assertEquals( "I am swimming", duck.swim());
+	}
+	
+	@Test
+	public void testChicken() throws Exception {
+	        assertEquals( "Cluck, cluck", chicken.says());
+	        assertEquals( "I cannot fly", chicken.fly());
+	}	
 }
