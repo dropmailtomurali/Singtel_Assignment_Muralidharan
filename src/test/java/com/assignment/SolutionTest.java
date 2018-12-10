@@ -14,6 +14,7 @@ public class SolutionTest
 	private Fish fish = new Fish();
 	private Shark shark = new Shark();
 	private Clownfish clownfish = new Clownfish();
+	private Dolphin dolphin = new Dolphin();
 	
 	@Test
 	public void testFly() throws Exception {
@@ -84,5 +85,10 @@ public class SolutionTest
 	        assertEquals( "Small", clownfish.getSizeAttribute());
 	        assertEquals( "Orange", clownfish.getColorAttribute());
 	        assertEquals( "Make jokes", clownfish.getBehaviorAttribute());
+	}
+	
+	@Test
+	public void testDolphin() throws Exception {
+	        assertEquals( "I am swimming", dolphin.swim());
 	}
 }

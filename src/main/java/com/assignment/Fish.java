@@ -1,6 +1,6 @@
 package com.assignment;
 
-public class Fish {
+public class Fish implements Swimmers {
 	public String swim() {
 		return "I am swimming";
     }
