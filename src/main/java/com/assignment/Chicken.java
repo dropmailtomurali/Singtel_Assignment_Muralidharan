@@ -1,11 +1,11 @@
 package com.assignment;
 
 public class Chicken extends Bird {
-	String says() {
+	public String says() {
 		 return "Cluck, cluck";
 	}
 	
-	String fly() {
+	public String fly() {
 		return "I cannot fly";
     }
 }

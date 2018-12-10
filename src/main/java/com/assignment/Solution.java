@@ -13,6 +13,6 @@ public class Solution
     	Bird bird = new Bird();
     	 bird.walk();
     	 bird.fly();
-    	 bird.sing();
+    	 bird.says();
     }
 }

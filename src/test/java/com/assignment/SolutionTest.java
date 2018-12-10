@@ -24,7 +24,7 @@ public class SolutionTest
 	
 	@Test
 	public void testSing() throws Exception {
-	        assertEquals( "I am singing", bird.sing());
+	        assertEquals( "I am singing", bird.says());
 	}
 	
 	@Test
@@ -42,5 +42,23 @@ public class SolutionTest
 	@Test
 	public void testRooster() throws Exception {
 	        assertEquals( "Cock-a-doodle-doo", rooster.says());
+	}
+	
+	@Test
+	public void testParrotWithDogs() throws Exception {
+			Parrot parrotWithDogs = new Parrot(new Dog());
+	        assertEquals( "Woof, woof", parrotWithDogs.says());
+	}
+	
+	@Test
+	public void testParrotWithCats() throws Exception {
+			Parrot parrotWithCats = new Parrot(new Cat());
+	        assertEquals( "Meow", parrotWithCats.says());
+	}
+	
+	@Test
+	public void testParrotWithRooster() throws Exception {
+			Parrot parrotWithRooster = new Parrot(new Rooster());
+	        assertEquals( "Cock-a-doodle-doo", parrotWithRooster.says());
 	}
 }

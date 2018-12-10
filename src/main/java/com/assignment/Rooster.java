@@ -1,7 +1,7 @@
 package com.assignment;
 
-public class Rooster extends Chicken {
-	String says() {
+public class Rooster extends Chicken implements Says {
+	public String says() {
 		 return "Cock-a-doodle-doo";
 	}
 }
