@@ -12,6 +12,8 @@ public class SolutionTest
 	private Chicken chicken = new Chicken();
 	private Rooster rooster = new Rooster();
 	private Fish fish = new Fish();
+	private Shark shark = new Shark();
+	private Clownfish clownfish = new Clownfish();
 	
 	@Test
 	public void testFly() throws Exception {
@@ -68,5 +70,19 @@ public class SolutionTest
 	        assertEquals( "I am swimming", fish.swim());
 	        assertEquals( "I don't walk", fish.walk());
 	        assertEquals( "I don't sing", fish.sing());
+	}
+	
+	@Test
+	public void testShark() throws Exception {
+	        assertEquals( "Large", shark.getSizeAttribute());
+	        assertEquals( "Grey", shark.getColorAttribute());
+	        assertEquals( "Eat other fish", shark.getBehaviorAttribute());
+	}
+	
+	@Test
+	public void testClownfish() throws Exception {
+	        assertEquals( "Small", clownfish.getSizeAttribute());
+	        assertEquals( "Orange", clownfish.getColorAttribute());
+	        assertEquals( "Make jokes", clownfish.getBehaviorAttribute());
 	}
 }
