@@ -15,6 +15,7 @@ public class SolutionTest
 	private Shark shark = new Shark();
 	private Clownfish clownfish = new Clownfish();
 	private Dolphin dolphin = new Dolphin();
+	private Butterfly butterfly = new Butterfly();
 	
 	@Test
 	public void testFly() throws Exception {
@@ -90,5 +91,10 @@ public class SolutionTest
 	@Test
 	public void testDolphin() throws Exception {
 	        assertEquals( "I am swimming", dolphin.swim());
+	}
+	
+	@Test
+	public void testButterfly() throws Exception {
+	        assertEquals( "I am flying", butterfly.fly());
 	}
 }
